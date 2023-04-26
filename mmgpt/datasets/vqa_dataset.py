@@ -127,7 +127,7 @@ class VQADataset(Dataset):
 
     def tokenize(self, text):
         res = self.tokenizer(
-            text["instruction"] + text["answer"] + "### End.",
+            text["instruction"] + text["answer"],
             return_tensors=None,
             padding="do_not_pad",
             truncation=True,

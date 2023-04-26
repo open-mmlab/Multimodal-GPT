@@ -1,6 +1,6 @@
-# 🤖 Multi-modality GPT
+# 🤖 Multi-modal GPT
 
-Train a multi-modality chatbot with visual and language instructions! 
+Train a multi-modal chatbot with visual and language instructions! 
 
 Based on the open-source multi-modal model [OpenFlamingo](https://github.com/mlfoundations/open_flamingo), we create various **visual instruction** data with open datasets, including VQA, Image Captioning, Visual Reasoning, Text OCR, and Visual Dialogue. Additionally, we also train the language model component of OpenFlamingo using only **language-only instruction** data.
 
@@ -37,7 +37,7 @@ conda env create -f environment.yml
 
     Download the OpenFlamingo pre-trained model from [openflamingo/OpenFlamingo-9B](https://huggingface.co/openflamingo/OpenFlamingo-9B)
 
-    Download our LoRA Weight from [here](TODO)
+    Download our LoRA Weight from [here](https://download.openmmlab.com/mmgpt/v0/mmgpt-lora-v0-release.pt)
 
     Then place these models in checkpoints folders like this:
 
@@ -61,7 +61,8 @@ conda env create -f environment.yml
 # Examples
 
 ### Recipe:
-![image4](https://user-images.githubusercontent.com/12907710/234523451-51b35c99-67ce-43d4-a498-f2a71eaf9cb7.png)
+![image4](https://user-images.githubusercontent.com/12907710/234554562-8f3be88f-d563-47ba-97d9-ade8d47c46b0.png)
+
 ### Travel plan:
 ![image3](https://user-images.githubusercontent.com/12907710/234523464-80c4e3f0-f99f-4498-96ef-dc43ef89c64b.png)
 ### Movie:

@@ -1,6 +1,5 @@
 # 🤖 Multi-modal GPT
 
-
 Train a multi-modal chatbot with visual and language instructions! 
 
 Based on the open-source multi-modal model [OpenFlamingo](https://github.com/mlfoundations/open_flamingo), we create various **visual instruction** data with open datasets, including VQA, Image Captioning, Visual Reasoning, Text OCR, and Visual Dialogue. Additionally, we also train the language model component of OpenFlamingo using only **language-only instruction** data.
@@ -8,7 +7,6 @@ Based on the open-source multi-modal model [OpenFlamingo](https://github.com/mlf
 The **joint training** of visual and language instructions effectively improves the performance of the model!
 
 Welcome to join us！
-
 
 <div align="center">
   <a href="https://openmmlab.medium.com/" style="text-decoration:none;">
@@ -29,9 +27,6 @@ Welcome to join us！
   <a href="https://www.zhihu.com/people/openmmlab" style="text-decoration:none;">
     <img src="https://user-images.githubusercontent.com/25839884/219026120-ba71e48b-6e94-4bd4-b4e9-b7d175b5e362.png" width="3%" alt="" /></a>
 </div>
-
-
-
 
 # Features
 

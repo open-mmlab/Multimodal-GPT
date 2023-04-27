@@ -8,7 +8,6 @@ from mmgpt.models.builder import create_model_and_transforms
 
 TEMPLATE = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
 response_split = "### Response:"
-Prompt_Tutorial = "Model Inputs = {Prompt}({seperator}Image:\n<image> if image upload){seperator}{user_prefix}:\n{instruction}({sepertator}+Input:\n{history}){seperator}{ai_prefix}:\n"
 
 
 class Inferencer:
@@ -229,7 +228,8 @@ def bot(
                                    num_beams, temperature, top_k, top_p,
                                    do_sample)
     state.all_history[-1][-1] = inference_results
-    memory_allocated = str(torch.cuda.memory_allocated() / 1024**3) + 'GB'
+    memory_allocated = str(round(torch.cuda.memory_allocated() / 1024**3,
+                                 2)) + 'GB'
     return state, to_gradio_chatbot(state), "", None, inputs, memory_allocated
 
 
@@ -271,9 +271,6 @@ def build_conversation_demo():
                         "Prompt",
                         open=False,
                 ):
-                    with gr.Accordion(
-                            "Click to hide the tutorial", open=False):
-                        gr.Markdown(Prompt_Tutorial)
                     with gr.Row():
                         ai_prefix = gr.Text("Response", label="AI Prefix")
                         user_prefix = gr.Text(
@@ -367,7 +364,7 @@ if __name__ == "__main__":
         llama_path=llama_path,
         open_flamingo_path=open_flamingo_path,
         finetune_path=finetune_path)
-    init_memory = str(torch.cuda.memory_allocated() / 1024**3) + 'GB'
+    init_memory = str(round(torch.cuda.memory_allocated() / 1024**3, 2)) + 'GB'
     demo = build_conversation_demo()
     demo.queue(concurrency_count=3)
     IP = "0.0.0.0"

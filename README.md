@@ -18,6 +18,7 @@ To install the package in an existing environment, run
 
 ```bash
 git clone https://github.com/open-mmlab/Multimodal-GPT.git
+cd Multimodal-GPT
 pip install -r requirements.txt
 pip install -e. -v
 ```

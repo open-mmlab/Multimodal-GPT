@@ -42,7 +42,7 @@
 git clone https://github.com/open-mmlab/Multimodal-GPT.git
 cd Multimodal-GPT
 pip install -r requirements.txt
-pip install -e. -v
+pip install -v -e .
 ```
 
 或者创建一个新的 conda 环境

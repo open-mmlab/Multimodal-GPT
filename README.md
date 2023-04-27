@@ -55,7 +55,7 @@ conda env create -f environment.yml
 2. launch the gradio demo
 
     ```bash
-    python chat_gradio_demo.py
+    python app.py
     ```
 
 # Examples

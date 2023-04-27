@@ -34,7 +34,7 @@ Welcome to join us！
 - Parameter efficient fine-tuning with LoRA
 - Tuning vision and language at the same time, complement each other
 
-# Installaion
+# Installation
 
 To install the package in an existing environment, run
 
@@ -42,7 +42,7 @@ To install the package in an existing environment, run
 git clone https://github.com/open-mmlab/Multimodal-GPT.git
 cd Multimodal-GPT
 pip install -r requirements.txt
-pip install -e. -v
+pip install -v -e .
 ```
 
 or create a new conda environment

@@ -17,3 +17,4 @@ inflection
 sentencepiece
 open_clip_torch
 mmengine
+gradio

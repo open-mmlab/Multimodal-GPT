@@ -17,7 +17,7 @@ The **joint training** of visual and language instructions effectively improves 
 To install the package in an existing environment, run
 
 ```bash
-git clone xxxxxx.git
+git clone https://github.com/open-mmlab/Multimodal-GPT.git
 pip install -r requirements.txt
 pip install -e. -v
 ```

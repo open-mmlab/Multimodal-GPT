@@ -8,6 +8,14 @@
 
 欢迎加入我们！
 
+</div>
+
+<div align="center">
+
+[English](README.md) | 简体中文
+
+</div>
+
 <div align="center">
   <a href="https://openmmlab.medium.com/" style="text-decoration:none;">
     <img src="https://user-images.githubusercontent.com/25839884/219255827-67c1a27f-f8c5-46a9-811d-5e57448c61d1.png" width="3%" alt="" /></a>

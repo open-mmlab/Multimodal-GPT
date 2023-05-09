@@ -36,6 +36,13 @@ English | [简体中文](README_zh-CN.md)
     <img src="https://user-images.githubusercontent.com/25839884/219026120-ba71e48b-6e94-4bd4-b4e9-b7d175b5e362.png" width="3%" alt="" /></a>
 </div>
 
+## Online Demo
+
+👉 [***Demo Link***](https://mmgpt.openmmlab.org.cn/)
+
+<img src="https://user-images.githubusercontent.com/12907710/237001772-f6e94884-db35-47a0-9fb8-09c2c6a692ff.png" width="70%" alt="" />
+
+
 ## Features
 
 - Support various vision and language instruction data
@@ -61,7 +68,7 @@ conda env create -f environment.yml
 ```
 
 
-## Demo
+## Launch Demo Locally
 
 1. Download the pre-trained weights.
 

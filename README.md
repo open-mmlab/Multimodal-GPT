@@ -1,10 +1,10 @@
 # 🤖 Multi-modal GPT
 
-Train a multi-modal chatbot with visual and language instructions! 
+Train a multi-modal chatbot with visual and language instructions!
 
 Based on the open-source multi-modal model [OpenFlamingo](https://github.com/mlfoundations/open_flamingo), we create various **visual instruction** data with open datasets, including VQA, Image Captioning, Visual Reasoning, Text OCR, and Visual Dialogue. Additionally, we also train the language model component of OpenFlamingo using only **language-only instruction** data.
 
-The **joint training** of visual and language instructions effectively improves the performance of the model!
+The **joint training** of visual and language instructions effectively improves the performance of the model! For more details please refer to our [technical report](https://arxiv.org/abs/2305.04790).
 
 Welcome to join us!
 
@@ -178,3 +178,16 @@ torchrun --nproc_per_node=8 mmgpt/train/instruction_finetune.py \
 - [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
 - [LLaVA](https://github.com/haotian-liu/LLaVA/tree/main)
 - [Instruction Tuning with GPT-4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)
+
+If you find our project useful for your research and applications, please cite using this BibTeX:
+
+```bibtex
+@misc{gong2023multimodalgpt,
+      title={MultiModal-GPT: A Vision and Language Model for Dialogue with Humans}, 
+      author={Tao Gong and Chengqi Lyu and Shilong Zhang and Yudong Wang and Miao Zheng and Qian Zhao and Kuikun Liu and Wenwei Zhang and Ping Luo and Kai Chen},
+      year={2023},
+      eprint={2305.04790},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```

@@ -38,7 +38,7 @@
 
 ## 在线演示
 
-👉 [***Demo Link***](https://mmgpt.openmmlab.org.cn/)
+👉 [***演示地址***](https://mmgpt.openmmlab.org.cn/)
 
 <img src="https://user-images.githubusercontent.com/12907710/237001772-f6e94884-db35-47a0-9fb8-09c2c6a692ff.png" width="70%" alt="" />
 

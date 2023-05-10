@@ -4,7 +4,7 @@
 
 基于开源多模态模型 [OpenFlamingo](https://github.com/mlfoundations/open_flamingo)，我们使用公开数据集创建了各种**视觉指令**数据，包括视觉问答、图像字幕、视觉推理、文本 OCR 和视觉对话。此外，我们还使用仅包含**语言指令**数据的语言模型组件进行了训练。
 
-视觉和语言指令的**联合训练**有效提高了模型的性能！
+视觉和语言指令的**联合训练**有效提高了模型的性能！更多细节请参阅我们的[技术报告](https://arxiv.org/abs/2305.04790)。
 
 欢迎加入我们！
 
@@ -176,3 +176,16 @@ torchrun --nproc_per_node=8 mmgpt/train/instruction_finetune.py \
 - [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
 - [LLaVA](https://github.com/haotian-liu/LLaVA/tree/main)
 - [Instruction Tuning with GPT-4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)
+
+如果你觉得我们的项目对你的研究和应用有帮助，请用以下 BibTeX 进行引用
+
+```bibtex
+@misc{gong2023multimodalgpt,
+      title={MultiModal-GPT: A Vision and Language Model for Dialogue with Humans}, 
+      author={Tao Gong and Chengqi Lyu and Shilong Zhang and Yudong Wang and Miao Zheng and Qian Zhao and Kuikun Liu and Wenwei Zhang and Ping Luo and Kai Chen},
+      year={2023},
+      eprint={2305.04790},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```

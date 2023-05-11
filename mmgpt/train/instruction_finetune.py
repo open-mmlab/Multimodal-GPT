@@ -185,7 +185,7 @@ def main():
     )
 
     # build language dataset and dataloader for multi-modality training
-    if dataset_config.language_datasets is not None and len(args.language_datasets) > 0:
+    if dataset_config.get('language_datasets') is not None and len(args.language_datasets) > 0:
         lang_dataset = build_dataset(
             dataset_config=dataset_config.language_datasets,
             tokenizer=tokenizer,

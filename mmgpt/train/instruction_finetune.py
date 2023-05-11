@@ -172,7 +172,7 @@ def main():
         raise ValueError("dataset_config must be specified")
 
     dataset = build_dataset(
-        config=dataset_config.visual_datasets,
+        dataset_config=dataset_config.visual_datasets,
         vis_processor=image_processor,
         tokenizer=tokenizer,
     )
@@ -187,7 +187,7 @@ def main():
     # build language dataset and dataloader for multi-modality training
     if dataset_config.language_datasets is not None and len(args.language_datasets) > 0:
         lang_dataset = build_dataset(
-            config=dataset_config.language_datasets,
+            dataset_config=dataset_config.language_datasets,
             tokenizer=tokenizer,
         )
         lang_dataloader = DataLoader(

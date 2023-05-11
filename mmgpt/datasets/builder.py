@@ -23,7 +23,7 @@ def build_dataset(dataset_config, **kwargs):
         return ConcatDataset(datasets)
     dataset_type = dataset_config.pop("type")
     sample = dataset_config.pop("sample", -1)
-    if dataset_config.type == "llava":
+    if dataset_type == "llava":
         dataset = LlavaDataset(
             **dataset_config,
             **kwargs,

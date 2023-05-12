@@ -21,6 +21,7 @@ from transformers import (
 )
 
 from mmgpt import create_model_and_transforms
+from mmgpt.models.builder import create_toy_model_and_transforms
 from mmgpt.datasets import InfiniteSampler, build_dataset
 from mmgpt.train.distributed import init_distributed_device, world_info_from_env
 from mmgpt.train.train_utils import AverageMeter, get_autocast, get_cast_dtype, get_checkpoint
@@ -185,7 +186,7 @@ def main():
     )
 
     # build language dataset and dataloader for multi-modality training
-    if dataset_config.get('language_datasets') is not None and len(args.language_datasets) > 0:
+    if dataset_config.get('language_datasets') is not None and len(dataset_config.language_datasets) > 0:
         lang_dataset = build_dataset(
             dataset_config=dataset_config.language_datasets,
             tokenizer=tokenizer,

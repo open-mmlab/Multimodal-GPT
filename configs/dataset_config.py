@@ -51,14 +51,10 @@ visual_datasets = [
 language_datasets = [
     dict(
         type="dolly",
-        ann_paths=[
-            "data/dolly/databricks-dolly-15k.jsonl",
-        ],
+        ann_path="data/dolly/databricks-dolly-15k.jsonl",
     ),
     dict(
         type="alpaca_gpt4",
-        ann_paths=[
-            "data/alpaca_gpt4/alpaca_gpt4_data.json",
-        ],
+        ann_path="data/alpaca_gpt4/alpaca_gpt4_data.json",
     ),
 ]

@@ -57,4 +57,8 @@ language_datasets = [
         type="alpaca_gpt4",
         ann_path="data/alpaca_gpt4/alpaca_gpt4_data.json",
     ),
+    dict(
+        type="baize",
+        ann_path="data/baize/quora_chat_data.json",
+    ),
 ]

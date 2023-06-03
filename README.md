@@ -145,6 +145,10 @@ conda env create -f environment.yml
 
 You can also customize the data path in the [configs/dataset_config.py](configs/dataset_config.py).
 
+8. [Baize](https://github.com/project-baize/baize-chatbot)
+
+    Download it from [this link](https://github.com/project-baize/baize-chatbot/blob/main/data/quora_chat_data.json) and place it in `data/baize/quora_chat_data.json`.
+
 
 ## Start training
 

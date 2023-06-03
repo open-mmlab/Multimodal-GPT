@@ -15,6 +15,7 @@ from .ocr_vqa_dataset import OCRVQADataset  # noqa: F401
 from .snli_ve_datasets import SNLIVEDataset  # noqa: F401
 from .text_ocr_dataset import TextOCRDataset  # noqa: F401
 from .vqa_dataset import ConcatDataset, VQADataset  # noqa: F401
+from .baize_dataset import BaiZeDataset  # noqa: F401
 
 
 def build_dataset(dataset_config, **kwargs):
@@ -105,6 +106,11 @@ def build_dataset(dataset_config, **kwargs):
         )
     elif dataset_type == "alpaca_gpt4":
         dataset = AlpacaGPT4Dataset(
+            **dataset_config,
+            **kwargs,
+        )
+    elif dataset_type == "baize":
+        dataset = BaiZeDataset(
             **dataset_config,
             **kwargs,
         )
